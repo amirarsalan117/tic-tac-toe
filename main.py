@@ -1,7 +1,14 @@
 def show_board():
     for i in range(3):
         print(board[i])
-
+def check_winner(arr):
+    # for i in range(3):
+    #     for j in range(3):
+    #         if True:
+    #             return True
+    # return False
+    pass
+        
 
 board = [['-','-','-'],['-','-','-'],['-','-','-',]]
 show_board()
