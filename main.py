@@ -39,6 +39,16 @@ while is_game_on:
     elif check_winner(board , 'O'):
         winner = 'O'
         is_game_on = False
+    else:
+        count = 0
+        for i in range(3):
+            if '-' not in board[i]:
+                count +=1
+        if count == 3:
+            winner = "Draw"
+            is_game_on = False
     
-
-print(f'the winner is {winner}')
+if winner == "Draw":
+    print('Draw, No one Win!')
+else:
+    print(f'the winner is {winner}')
